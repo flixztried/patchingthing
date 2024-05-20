@@ -39,16 +39,15 @@ echo "Renaming Files"
  mv revanced-cli-2.21.2-all.jar cli.jar
  mv revanced-patches-2.174.0.jar patches.jar
  mv revanced-integrations-1.8.2.apk inte.apk
- mv ~/patcher/downloads/com.reddit.frontpage*.apk ~/patcher/downloads/reddit.apk
+ mv ./downloads/com.reddit.frontpage*.apk ./downloads/reddit.apk
 } &> /dev/null
 echo "Done!"
 
 #patching
 echo "Redirecting you to patching folder for patching!"
-echo "Done!"
-cd ~/patcher
+echo "Already there!"
 echo "Patching Reddit"
-java -jar cli.jar -a ~/patcher/downloads/reddit.apk -o revanced -m inte.apk -b patches.jar
+java -jar cli.jar -a ./downloads/reddit.apk -o revanced -m inte.apk -b patches.jar
 echo "Patching Completed!"
-cd ~/patcher/revanced
+cd ./revanced
 echo "base.apk is the patched apk."
