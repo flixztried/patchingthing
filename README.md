@@ -1,4 +1,6 @@
-# patchingthing
+# patchingthing, basically patches reddit
 run using 
 ```. patcher.sh```
-basically patches reddit
+
+
+
