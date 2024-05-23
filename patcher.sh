@@ -53,3 +53,9 @@ cd ./revanced
 echo "Moving patched APK to Internal storage"
 mv ./base.apk '/storage/emulated/0'
 echo "base.apk is the patched apk."
+
+#cleanup
+echo "Cleaning things up."
+cd ../..
+rm -rf 'patcher'
+echo "Cleanup completed!"
