@@ -50,4 +50,6 @@ echo "Patching Reddit"
 java -jar cli.jar -a ./downloads/reddit.apk -o revanced -m inte.apk -b patches.jar
 echo "Patching Completed!"
 cd ./revanced
+echo "Moving patched APK to Internal storage"
+mv ./base.apk '/storage/emulated/0'
 echo "base.apk is the patched apk."
